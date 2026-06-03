@@ -1,8 +1,14 @@
 from datetime import datetime
 from openpyxl import Workbook
 
-from db import conn, cursor
+from db import get_connection
 
+
+conn = get_connection()
+cursor = conn.cursor(dictionary=True)
+
+cursor.execute("SELECT DATABASE();")
+print(cursor.fetchone())
 
 # metodo de pago
 
