@@ -1,5 +1,5 @@
 from gastos import *
-from reportes import *
+from informes import *
 
 
   
