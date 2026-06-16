@@ -1,5 +1,5 @@
-from gastos import *
-from informes import *
+from models.gastos import *
+from reports.informes import *
 
 
   

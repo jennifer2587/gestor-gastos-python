@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Gestor de Gastos</title>
+</head>
+<body>
+
+   <div class="contenedor">
+
+
+    <h1> Gestor de gastos </h1>
+    <p>Bienvenid@s a mi aplicacion de control de gastos</p>
+
+       <a class="boton" href="{{ url_for('gastos') }}">
+           📋  Mostrar  gastos
+        </a>
+
+
+       <a class="boton" href="{{ url_for('agregar') }}">
+            ➕ Agregar gasto
+       </a>
+       
+      
+       <a class="boton"  href= "{{ url_for('buscar') }}">
+        🔎 Buscar gasto por descripción
+       </a>
+
+
+      <a class="boton"  href="{{ url_for('fechas')}}">
+          📅 Gastos por fechas
+      </a>
+
+       <a class="boton" href="{{ url_for('categoria')}}">
+        📊 Ver por categoría
+      </a>
+
+      <a class="boton" href="{{ url_for('total_categoria')}}">
+         📈 Total por categoría
+      </a>
+
+      <a class="boton" href="{{ url_for('total')}}">
+           💰 Total general
+      </a>
+     
+
+
+     
+
+
+
+    </div>
+
+</body>
+</html>

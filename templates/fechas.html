@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Gastos por fecha</title>
+</head>
+<body>
+      <div class="contenedor">
+        
+    <h2>📅 Buscar gastos por fecha</h2>
+
+    <form method="POST">
+      <label>Selecciona la fecha:</label>
+      <input 
+      type="date"
+      name="fecha"
+      required>
+
+      <button type="submit">Buscar</button>
+
+
+    </form>
+
+    <br>
+
+    {% for g in gastos %}
+      <p>{{ g.descripcion }} - {{ g.valor }} - {{ g.fecha }}</p>
+    {% endfor %}
+    
+    <br>
+
+    <a class="boton" href="{{ url_for('index')}}">
+        🏠 Inicio
+    </a>
+    
+</div>
+</body>
+</html>

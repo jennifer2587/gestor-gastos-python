@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Agregar gastos</title>
+</head>
+<body>
+
+
+    <div class="contenedor">
+
+    
+    <h1>➕ Agregar gasto</h1>
+
+    <form action="{{ url_for('agregar')}}" method= "POST">
+
+       <label>Descripcion del gasto</label>
+       <br>
+
+       <input 
+       type="text"
+       name="descripcion"
+       placeholder="Ej:MErcado"
+       required>
+
+
+       <br><br>
+
+
+      <label>Valor</label>
+      <br>
+
+      <input 
+      type="number"
+      name="valor"
+      placeholder="Ej:50000"
+      required>
+
+     <br><br>
+
+
+     <label>categoria</label>
+     <br>
+
+     <input
+      type="text"
+      name="categoria"
+      placeholder="Ej: comida, mascotas, estudio"
+      required>
+
+     <br><br>
+
+     
+    <label>Fecha</label>
+    <br>
+
+    <input 
+    type="date"
+    name="fecha"
+    required>
+
+
+    <br><br>
+
+
+    <button class="boton" type= "submit">
+        💾  Guardar gasto
+    </button>
+     
+
+    </form>
+
+    <br>
+
+
+    <a class="boton" href="{{ url_for('index')}}">
+     🏠 Volver al inicio
+    </a>
+
+
+    </div>
+
+
+</body>
+
+
+</html>

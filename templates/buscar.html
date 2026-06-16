@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+
+</head>
+
+<body>
+
+
+    <div class="contenedor">
+
+        <h1> 🔎 Buscar gasto</h1>
+
+         <form action="{{ url_for('buscar') }}" method="POST">
+
+        
+         <label>Descripcion del gasto</label>
+
+         <input
+          type="text"
+          name="descripcion"
+          placeholder="Ej: mercado"
+          required>
+
+          <button class="boton" type="submit">
+           Buscar
+          </button>
+
+    
+        </form>
+
+
+        {% if gastos %}
+
+        <h2>Resultados</h2>
+          
+       
+        {% for gasto in gastos %}
+
+        <p>
+            {{gasto.descripcion}}
+            -${{ gasto.valor }}
+            -{{ gasto.categoria }}
+            -{{ gasto.fecha }}
+        </p>
+
+        {% endfor %}
+
+        {% endif %}
+       
+
+        <a class="boton" href="{{ url_for('index')}}">
+           🏠 Inicio
+        </a>
+        
+    </div>
+    
+</body>
+</html>
