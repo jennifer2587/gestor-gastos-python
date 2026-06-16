@@ -1,45 +1,40 @@
-# Sistema de Gestión de Gastos
+# 💰 Gestor de Gastos Flask
 
-Aplicación desarrollada en Python para registrar y administrar gastos personales.
+Aplicación web para administrar gastos personales, creada desde cero con Python y Flask.
 
-## Descripción
+Este proyecto permite llevar un control de gastos mediante una interfaz web conectada a una base de datos MySQL.
 
-Este proyecto permite llevar el control de gastos mediante un programa en Python conectado a una base de datos MySQL.
+---
 
-Permite registrar, consultar, modificar y eliminar gastos, además de exportar información a Excel.
-
-## Tecnologías utilizadas
-
-- Python
-- MySQL
-- Git
-- GitHub
-- OpenPyXL
-
-## Funcionalidades
+## 🚀 Funcionalidades
 
 ✅ Registrar gastos  
-✅ Consultar gastos  
+✅ Mostrar lista de gastos  
+✅ Buscar gastos por descripción  
+✅ Filtrar gastos por fecha  
+✅ Filtrar gastos por categoría  
 ✅ Modificar gastos  
 ✅ Eliminar gastos  
-✅ Exportar datos a Excel
+✅ Exportar gastos a Excel  
+✅ Panel de resumen con tarjetas:
 
-## Archivos principales
+- 💰 Total gastado
+- 📋 Cantidad de gastos
+- 📈 Gasto más alto
 
-- `gastos.py` → Programa principal.
-- `db.py` → Conexión con la base de datos.
-- `gastos.xlsx` → Archivo de exportación.
+---
 
-## Ejecución
+## 🛠️ Tecnologías utilizadas
 
-Instalar dependencias:
+- Python
+- Flask
+- MySQL
+- HTML5
+- CSS3
+- Openpyxl
+- Git y GitHub
 
-pip install openpyxl mysql-connector-python
+---
 
-Ejecutar:
+## 📁 Estructura del proyecto
 
-python gastos.py
-
-## Autor
-
-Jennifer
