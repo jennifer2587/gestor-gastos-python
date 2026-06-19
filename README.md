@@ -38,3 +38,16 @@ Este proyecto permite llevar un control de gastos mediante una interfaz web cone
 
 ## 📁 Estructura del proyecto
 
+## 📸 Capturas del proyecto
+
+### Página principal
+
+![Inicio](imagenes/inicio.png)
+
+### Lista de gastos
+
+![mostrar](imagenes/mostrar.png)
+
+### Agregar gasto
+
+![Agregar gasto](imagenes/agregar.png)
